@@ -1,0 +1,55 @@
+/* Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
+
+
+/* Colors */
+
+:root{
+    --color-bodyBG:#D4D4D8;
+    --color-cardBG:#FAFAF9;
+    --color-innerCardBG:#FFFFFF;
+    --color-primaryText:#18181B;
+    --color-secondaryText:#52525A;
+    --color-green: #4CA154;
+    --color-yellow:#F5C044;
+}
+
+/* Global Style */
+
+body{
+    font-family: 'Sora', sans-serif;
+    background: var(--color-bodyBG);
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Testimonial Card */
+
+
+.testimonial-card{
+    display: flex;
+    max-width: 1280px;
+    margin: auto;
+    background: var(--color-cardBG);
+    box-sizing: border-box;
+    padding: 20px 50px;
+}
+
+.testimonial-star-img-box{
+    background: var(--color-yellow);
+    width: fit-content;
+}
+
+.testimonial-card div{
+    max-width: 564px;
+}
+
+.testimonial-card div p{
+    font-size: 20px;
+    line-height: 29px;
+    color:var(--color-secondaryText)
+}
