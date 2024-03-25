@@ -85,11 +85,16 @@ body{
 }
 
 .testimonial-inner-card:first-child{
-    margin-left: auto;
+    float: right;
+    margin-bottom: 60px;
 }
 
 .testimonial-inner-card:last-child{
-    margin-top: 60px;
+    clear:both;
+}
+
+.testimonial-inner-card .brand-img{
+    width: 100px;
 }
 
 .testimonial-inner-card h2{
@@ -116,5 +121,27 @@ body{
 @media(max-width:1066px){
     .testimonial-card{
         flex-direction: column;
+    }
+}
+
+@media(max-width:500px){
+
+    .testimonial-card{
+        padding: 60px 25px;
+    }
+
+    .testimonial-inner-card   {
+        width: 85%;
+        margin: auto;
+    }
+
+
+    .testimonial-inner-card:first-child{
+        float: initial;
+        margin-bottom: 30px;
+    }   
+
+    .testimonial-inner-card .brand-img{
+        width: 75px;
     }
 }
